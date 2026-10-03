@@ -2,7 +2,7 @@
 
 A local student reference app from the **Securing MERN Applications** seminar. Explore React, Express, Node.js and MongoDB code with the demonstrated security repairs enabled.
 
-**[Download the detailed seminar summary](docs/mern-security-student-guide.pdf)** — a 15-page A4 PDF with session explanations, app setup, exercises and answers, a project checklist, and free/paid courses labelled by provider.
+**[Download the seminar summary](docs/mern-security-student-guide.pdf)** — a 7-page A4 PDF with the main security lessons, app setup, a project checklist, and free/paid courses labelled by provider.
 
 ## What you can try
 
