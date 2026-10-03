@@ -1,0 +1,13 @@
+.report-shell { min-height: 100vh; }
+.report-header { max-width: 1100px; margin: auto; padding: 32px 28px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+.report-header > a:last-child { color: #355f9f; font-weight: 600; }
+.report-main { max-width: 920px; margin: 48px auto 90px; padding: 0 28px; }
+.report-main h1 { font-size: clamp(36px, 6vw, 64px); margin: 12px 0; }
+.report-intro { color: #646f80; font-size: 20px; }
+.report-panel { margin: 36px 0 24px; padding: clamp(24px, 5vw, 48px); background: #fff; border: 1px solid #d6deeb; border-top: 5px solid #ba7154; border-radius: 12px; box-shadow: 0 16px 48px #1e36500a; }
+.report-allowed { border-top-color: #2e8061; }
+.report-panel h2 { margin: 18px 0; font-size: clamp(26px, 4vw, 38px); }
+.report-badge { display: inline-block; margin: 0; padding: 8px 12px; border-radius: 6px; background: #f5eee8; color: #784329; font-size: 14px; font-weight: 700; }
+.report-allowed .report-badge { background: #e5f4eb; color: #256044; }
+.report-result { font-size: 24px; line-height: 1.6; color: #223b54; }
+@media (max-width: 600px) { .report-header { align-items: flex-start; flex-direction: column; } .report-main { margin-top: 24px; } }

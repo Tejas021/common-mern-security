@@ -1,0 +1,27 @@
+WHERE THE SEMINAR REPAIRS LIVE
+
+1. JWT authentication and password hashing: app/server/auth.mjs
+   Verify JWT signature, allowed algorithm, issuer/audience/expiry; load the current account; check revocation. Login uses a password hash and an HttpOnly cookie.
+
+2. Resource authorization: app/server/policies.mjs and routes.mjs
+   Post private drafts require ownership or admin permission. Profile editing requires the target to match the signed-in member. Administration is enforced by the API.
+
+3. Input contracts and editable fields: app/server/validation.mjs
+   Strict schemas bound strings and exclude privileged profile fields. People search accepts a string and escapes regex punctuation.
+
+4. Browser output: app/client/src/components/CommentBody.jsx
+   Comments render through React as text.
+
+5. Cookie writes: app/server/app.mjs and auth.mjs
+   Origin policy and CSRF checks protect authenticated changes. The React API helper sends the CSRF value held in memory.
+
+6. Login limits and headers: app/server/app.mjs
+   Login limiter, request limits, security headers and controlled error responses.
+
+7. Response privacy: app/server/routes.mjs
+   The public directory/profile endpoints project only their permitted fields; the feed excludes private drafts.
+
+8. Business rules: app/server/routes.mjs
+   Shop charges the catalog price; reward stock uses an atomic conditional decrement. These are focused teaching repairs, not a complete payment or fulfilment design.
+
+Use the handbook's project checklist to apply the same questions to your own college project. Source code is the reference; package names alone do not establish security.
